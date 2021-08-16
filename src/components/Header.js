@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faHeart, faInbox, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
