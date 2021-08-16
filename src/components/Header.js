@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faCoffee, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faInbox, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default props => {
     return (
@@ -12,10 +12,10 @@ export default props => {
                     source={require('../images/insta-logo.png')}
                 />
 
-                <View style={styles.container}>
-                    <FontAwesomeIcon icon={faPlusSquare} />
-                    <FontAwesomeIcon icon={faPlusSquare} />
-                    <FontAwesomeIcon icon={faPlusSquare} />
+                <View style={styles.iconsTop}>
+                    <FontAwesomeIcon icon={faPlusSquare} size={24} />
+                    <FontAwesomeIcon icon={faHeart} size={24} />
+                    <FontAwesomeIcon icon={faInbox} size={24} />
                 </View>
 
                 
@@ -25,6 +25,10 @@ export default props => {
 }
 
 const styles = StyleSheet.create({
+    b: {
+        borderWidth: 1,
+        borderColor: 'red',
+    },
     container: {
         flex: 1,
         flexDirection: 'row',
@@ -32,6 +36,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingLeft: 5,
         paddingRight: 5,
+    },
+    iconsTop: {
+        paddingLeft: 70,
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'flex-end',
     },
     header: {
         height: 50,

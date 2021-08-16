@@ -16,7 +16,10 @@
     "@fortawesome/react-native-fontawesome": "^0.2.7",
     "react": "17.0.1",
     "react-native": "0.64.2",
-    "react-native-svg": "^12.1.1"
+    "react-native-elements": "https://github.com/react-native-elements/react-native-elements#dist",
+    "react-native-safe-area-context": "^3.3.0",
+    "react-native-svg": "^12.1.1",
+    "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
