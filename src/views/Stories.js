@@ -1,11 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, FlatList, Text } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
-import { Avatar, ListItem, Acce } from 'react-native-elements';
+import { StyleSheet, View, FlatList } from 'react-native';
+import { Avatar, ListItem } from 'react-native-elements';
 import stories from '../data/Stories';
-
-const acc = <FontAwesomeIcon icon={faPlusSquare} size={56} />
 
 export default props => {
 
@@ -20,7 +16,7 @@ export default props => {
                     rounded 
                     containerStyle={{borderWidth: 3, borderColor: '#8e44ad'}}
                     size={"medium"} 
-                    source={{ uri: 'https://rodrigozanotta.com.br/assets/images/me.jpg'}} 
+                    source={{ uri: item.avatarUrl}} 
                 />
             </ListItem>
         );
@@ -49,7 +45,7 @@ export default props => {
                 showsHorizontalScrollIndicator={false}
                 renderItem={getStories}
             >
-                </FlatList>
+            </FlatList>
         </View>
     );
 }
@@ -74,6 +70,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
+        height: 50,
         paddingTop: 30,
         paddingLeft: 10,
         height: 60,

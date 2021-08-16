@@ -1,7 +1,8 @@
 import React from 'react';
 import { SafeAreaView, Text } from 'react-native';
-import Header from './components/Header';
-import Stories from './components/Stories';
+import Header from './views/Header';
+import Stories from './views/Stories';
+import Feed from './views/Feed';
 
 export default class App extends React.Component {
 
@@ -10,6 +11,7 @@ export default class App extends React.Component {
             <SafeAreaView>
                 <Header />
                 <Stories />
+                <Feed />
             </SafeAreaView>
         );
     }
