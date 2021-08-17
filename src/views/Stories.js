@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         height: 70,
-        marginTop: 8,
+        marginTop: 8
     },
     storiesAvatar: {
         borderWidth: 1,
@@ -73,6 +73,6 @@ const styles = StyleSheet.create({
         height: 50,
         paddingTop: 30,
         paddingLeft: 10,
-        height: 60,
+        height: 60
     },
 });
