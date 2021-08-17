@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faHeart, faInbox, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faComments, faHeart, faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 
 export default props => {
     return (
@@ -15,7 +15,7 @@ export default props => {
                 <View style={styles.iconsTop}>
                     <FontAwesomeIcon icon={faPlusSquare} size={24} />
                     <FontAwesomeIcon icon={faHeart} size={24} />
-                    <FontAwesomeIcon icon={faInbox} size={24} />
+                    <FontAwesomeIcon icon={faComments} size={24} />
                 </View>
 
                 
